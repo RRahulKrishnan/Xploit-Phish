@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Page</title>
+    <style>  
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            justify-content: flex-start;
+        }
+
+        .header {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Add this to align items left and right */
+            border-bottom: 1px solid #ddd;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+
+        .logo img {
+            width: 30px;  /* Reduced size */
+            height: 30px; /* Reduced size */
+        }
+
+        /* Title on the right */
+        .header-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .emails-container {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            width: 80%;
+        }
+
+        .inbox-heading {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .email-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f1f1f1;
+            padding: 15px 20px;
+            border-radius: 8px;
+            width: 100%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .email-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .email-text {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .email-text a {
+            text-decoration: none; /* Remove underline */
+            color: #007bff; /* Link color */
+            transition: color 0.3s; /* Transition for color change on hover */
+        }
+
+        .email-text a:hover {
+            color: #0056b3; /* Darker color on hover */
+        }
+
+        .action-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .action-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with logo and title -->
+    <div class="header">
+        <div class="logo">
+            <img src="assets/xogo.png" alt="Logo">  <!-- Logo size is reduced -->
+        </div>
+        <div class="header-title">Xploit</div>  <!-- Added title on the right -->
+    </div>
+
+    <!-- Email items -->
+    <div class="emails-container">
+        <div class="inbox-heading">Inbox</div>
+        <div class="email-item">
+            <div class="email-text"><a href="mail/mail1.html">Xpl0it-Monthly Newsletter</a></div>
+            <button class="action-button"><a href="codev/mail1-code.html" style="color: white; text-decoration: none;">Code View</a></button>
+        </div>
+        <div class="email-item">
+            <div class="email-text"><a href="mail/mail2.html">Important Mail - Xploit Pvt Ltd</a></div>
+            <button class="action-button"><a href="codev/mail2-code.html" style="color: white; text-decoration: none;">Code View</a></button>
+        </div>
+        <div class="email-item">
+            <div class="email-text"><a href="mail/mail3.html">LinkedX [Premium] Account Activation</a></div>
+            <button class="action-button"><a href="codev/mail3-code.html" style="color: white; text-decoration: none;">Code View</a></button>
+        </div>
+        <div class="email-item">
+            <div class="email-text"><a href="mail/mail4.html">[Alert] Immediate Response Required - Xploit Pvt Ltd</a></div>
+            <button class="action-button"><a href="codev/mail4-code.html" style="color: white; text-decoration: none;">Code View</a></button>
+        </div>
+        <div class="email-item">
+            <div class="email-text"><a href="mail/mail5.html">XtraGram [17] New Posts by @Xpl01t</a></div>
+            <button class="action-button"><a href="codev/mail5-code.html" style="color: white; text-decoration: none;">Code View</a></button>
+        </div>
+    </div>
+    <p style="text-align: center; font-size: 12px; margin-top: 20px; color: #888;">
+    &copy; 2024 Xpl0it. All rights reserved.<br>
+    Empowering cybersecurity through CTF-based learning.
+    </p>
+</body>
+</html>
